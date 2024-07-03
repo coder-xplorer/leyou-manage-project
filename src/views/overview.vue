@@ -150,9 +150,22 @@ onMounted(() => {
     const myChart = initChart(barChartEl.value);
     setOption(myChart, {
       color: '#409EFF',
+      tooltip: {
+        trigger: 'axis',
+      },
       xAxis: {
         type: 'category',
-        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        data: [
+          '07-02',
+          '07-03',
+          '07-04',
+          '07-05',
+          '07-06',
+          '07-07',
+          '07-08',
+          '07-09',
+          '07-10',
+        ],
         show: false,
       },
       yAxis: {
@@ -167,7 +180,7 @@ onMounted(() => {
       },
       series: [
         {
-          data: [120, 200, 150, 80, 70, 110, 130],
+          data: [120, 200, 150, 80, 70, 110, 100, 90, 150],
           type: 'bar',
         },
       ],

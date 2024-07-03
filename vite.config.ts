@@ -45,9 +45,10 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  // server: {
-  //   hmr: {
-  //     overlay: false,
-  //   },
-  // },
+  server: {
+    port: 3366,
+    // hmr: {
+    //   overlay: false,
+    // },
+  },
 });
