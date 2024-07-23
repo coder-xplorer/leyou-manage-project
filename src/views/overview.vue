@@ -102,7 +102,7 @@ onMounted(() => {
         type: 'category',
         data: ['周一', '周二', '周三', '周四', '周五', '周六', '周天'],
         boundaryGap: false,
-        show: true,
+        show: false,
       },
       yAxis: {
         type: 'value',

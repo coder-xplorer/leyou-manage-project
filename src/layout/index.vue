@@ -19,7 +19,7 @@
 import { Header, Sidebar, CollapseIcon, AppMain } from './components';
 </script>
 
-<style scoped lang="less">
+<style scoped lang="scss">
 .el-container {
   height: 100%;
 

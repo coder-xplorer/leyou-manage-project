@@ -23,11 +23,7 @@ import { useIsCollapseStore } from '@/stores/isCollapse';
 const isCollapseStore = useIsCollapseStore();
 const { isCollapse } = storeToRefs(isCollapseStore);
 const handleIsCollapse = () => {
-  console.log(123);
-
-  isCollapseStore.$patch({
-    isCollapse: !isCollapseStore.isCollapse,
-  });
+  isCollapseStore.setIsCollapse();
 };
 </script>
 

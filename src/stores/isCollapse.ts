@@ -4,9 +4,9 @@ import { defineStore } from 'pinia';
 export const useIsCollapseStore = defineStore('isCollapse', () => {
   const isCollapse = ref(false);
   // const doubleCount = computed(() => count.value * 2);
-  // function increment() {
-  //   count.value++;
-  // }
+  function setIsCollapse() {
+    isCollapse.value = !isCollapse.value;
+  }
 
-  return { isCollapse };
+  return { isCollapse, setIsCollapse };
 });
